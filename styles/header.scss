@@ -1,0 +1,29 @@
+.header {
+  z-index: 5;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  
+  padding: 0 0 0 15px;
+   &__menu {
+     display: flex;
+   }
+    
+  @include onDesktop {
+    background-color: #F3C6BD;
+    padding-top: 40px;
+  }
+  
+  &__button {
+    display: none;
+     @include onDesktop {
+      display: block;
+      margin-right: 130px;
+    }
+  }
+ 
+ 
+  &__button {
+    width: 160px;
+  }
+}

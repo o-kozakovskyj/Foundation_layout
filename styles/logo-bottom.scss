@@ -1,0 +1,45 @@
+.logo-bottom {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+
+  @include onDesktop {
+    flex-direction: row;
+  }
+  &__image {
+    width: 60px;
+    height: 60px;
+    background-color: #3040C4;
+    // background-image: linear-gradient(138deg,#3142C6 4%,#AF61D1 100%);
+    background-image: url(image/Shape.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    @include onDesktop {
+      margin-right: 15px;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include onDesktop {
+      align-items: flex-start;
+    }
+  }
+  &__name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  &__slogan {
+    opacity: 0.6;
+    font-size: 20px;
+  }
+}

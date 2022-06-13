@@ -1,0 +1,6 @@
+$mainTextColor: #2b292d;
+@mixin onDesktop  {
+  @media screen and (min-width: 1400px) {
+    @content;
+  }
+}

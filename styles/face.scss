@@ -1,0 +1,74 @@
+.face {
+  background-color: #f3c6bd;
+  padding: 36px 0;
+  position: relative;
+  @include onDesktop {
+    padding: 76px 0 130px 130px;
+  }
+  
+  &__title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: -0.3125px;
+    margin: 0 16px 24px 16px;
+    
+
+    @include onDesktop {
+      width: 754px ;
+      height: 165px;
+      font-size: 80px;
+      line-height: 78px;
+      letter-spacing: -0.5px;
+      margin-bottom: 34px;
+      transform: translate(0);
+
+    }
+  }
+  &__text {
+    font-size: 24px;
+    line-height: 34px;
+    margin:0 16px 30px 16px;
+    @include onDesktop {
+      width: 456px;
+      height: 102px;
+      font-size: 24px;
+      line-height: 34px;
+      margin-bottom: 58px;
+      transform: translate(0);
+    }
+  }
+  &__button-primary {
+    width: 290px;
+    margin:0 15px 16px 15px;
+   
+    @include onDesktop { 
+      width: 160px;
+      margin: 0 10px 0 0;
+    }
+    
+  }
+  &__button-secondary {
+    width: 290px;
+     margin:0 15px 249px 15px;
+     
+     @include onDesktop {
+      width: 158px;
+       margin: 0;
+    }
+  }
+  &__image {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 36px;
+    @include onDesktop {
+     height: 448px;
+     width: 796px;
+     position: absolute;
+     right: 25px;
+     bottom: 77px;
+    
+    }
+  }
+}
