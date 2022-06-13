@@ -1,7 +1,6 @@
 .about {
   display: flex;
   flex-direction: column;
- 
   font-size: 22px;
   line-height: 32px;
   padding: 46px 15px;
@@ -15,8 +14,7 @@
   }
   &__title {
     margin: 0 0 6px;
-    font-weight: 700;
-    
+    font-weight: 700;   
   }
   &__text {
     margin: 0;
@@ -25,15 +23,11 @@
   @include onDesktop {
     padding: 77px 130px 76px 130px;
     flex-direction: row;
-    justify-content: space-between;
-    
+    justify-content: space-between;   
   }
   &__article {
     @include onDesktop {
      width: 555px;
-     
-    }
-    
+    } 
   }
- 
 }
