@@ -779,4 +779,70 @@
   margin-top: 22px;
 }
 
+.communications {
+  padding: 50px 15px;
+  background: #f2f2f2;
+}
+.communications__subtitle {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 34px;
+  color: #0189d1;
+}
+.communications__title {
+  margin: 0;
+  margin-top: 17px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: -0.357143px;
+}
+.communications__text {
+  margin-top: 18px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+}
+.communications__button {
+  margin-top: 30px;
+  width: 160px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 13px;
+}
+.communications__figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-top: 40px;
+}
+.communications__figure-image {
+  max-width: 100%;
+}
+.communications__figure-caption {
+  margin-top: 17px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(43, 41, 45, 0.6);
+}
+.communications__underline {
+  width: 150px;
+  margin-top: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transform: translate(0);
+}
+.communications__additional-info {
+  margin-top: 33px;
+  font-size: 18px;
+  line-height: 26px;
+}
+.communications__additional-info-link {
+  display: block;
+  color: rgb(48, 64, 196);
+  font-weight: 700;
+}
+
 /*# sourceMappingURL=styles.css.map */

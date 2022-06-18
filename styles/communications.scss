@@ -1,0 +1,68 @@
+.communications {
+  padding: 50px 15px;
+  background: #f2f2f2;
+  &__subtitle {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+    color: #0189d1;
+  }
+  &__title {
+    margin: 0;
+    margin-top: 17px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.357143px;
+  }
+  &__text {
+    margin-top: 18px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+  }
+  &__button {
+    margin-top: 30px;
+    width: 160px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 13px;
+  }
+  &__figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 40px;
+  }
+  &__figure-image {
+   max-width: 100%;
+  }
+  &__figure-caption {
+    margin-top: 17px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(43, 41, 45, 0.6);
+   
+  }
+   &__underline {
+     
+      width: 150px;
+      margin-top: 40px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      transform: translate(0);
+    }
+  &__additional-info {
+    margin-top: 33px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+ 
+  &__additional-info-link {
+    display: block;
+    color: rgba(48, 64, 196, 1);
+    font-weight: 700;
+  }
+}
