@@ -1,315 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-      integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;600&family=Work+Sans:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body class="page">
 
-    <div class="page__container">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foundation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;600&family=Work+Sans:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-       <!--   header   -->
+<body class="page">
 
-        <header class="header">
-          <a class="logo-top" href="#">
-            <div class="logo-top__image"></div>
-            <div class="logo-top__text">
-              <div class="logo-top__name">Foundation</div>
-              <div class="logo-top__slogan">Startup landing template</div>
+  <div class="page__container">
+
+    <!--   header   -->
+
+    <header class="header">
+      <a class="logo-top" href="#">
+        <div class="logo-top__image"></div>
+        <div class="logo-top__text">
+          <div class="logo-top__name">Foundation</div>
+          <div class="logo-top__slogan">Startup landing template</div>
+        </div>
+      </a>
+      <div class="header__menu">
+        <div class="header-nav">
+          <i class="fa-solid fa-bars header-nav__icon"></i>
+          <ul class="header-nav__list">
+            <li class="header-nav__list-item"><a href="#">Home</a></li>
+            <li class="header-nav__list-item">
+              <a href="#stories">Stories</a>
+            </li>
+            <li class="header-nav__list-item">
+              <a href="#library">Library</a>
+            </li>
+            <img class="header-nav__check-image" src="image/Arrow.png"></img>
+          </ul>
+        </div>
+        <button class="header__button button__primary">Get Started</button>
+      </div>
+
+    </header>
+    <!-- Main -->
+
+    <!-- headline -->
+    <section class="headline">
+      <img src="./image/ouch.png" alt="man at work" class="headline__image" />
+      <h1 class="headline__title">Build stunning websites & apps.</h1>
+      <article class="headline__text">
+        Create live segments and target the right people for messages based
+        on their behaviors.
+      </article>
+      <button class="button__primary headline__button-primary">
+        Get Started
+      </button>
+      <button class="button__secondary headline__button-secondary">
+        Learn More
+      </button>
+    </section>
+
+    <!-- About -->
+
+    <section class="about">
+      <article class="about__article">
+        <h4 class="about__title">What is it about</h4>
+        <p class="about__text">
+          Building a website for a startup that looks
+          amazing is not a rocket science anymore.
+        </p>
+      </article>
+      <article class="about__article">
+        <h4 class="about__title">Who is it for?</h4>
+        <p class="about__text">
+          Startups, small companies and teams, entrepreneurs
+          and web developers.
+        </p>
+      </article>
+    </section>
+
+    <!-- Customers -->
+
+    <section class="customers">
+      <div class="customers__row">
+        <div class="customers__item">
+          <img class="customers__logo" src="./image/logos/nut.png" alt="New York Times logo">
+        </div>
+        <div class="customers__item">
+          <img class="customers__logo" src="./image/logos/forbes.png" alt="Forbes logo">
+        </div>
+        <div class="customers__item">
+          <img class="customers__logo" src="./image/logos/apple.png" alt="Apple logo">
+        </div>
+      </div>
+      <div class="customers__row">
+        <div class="customers__item">
+          <img class="customers__logo" src="./image/logos/mashable.png" alt="Mashable logo">
+        </div>
+        <div class="customers__item">
+          <img class="customers__logo" src="./image/logos/wsj.png" alt="WSJ logo">
+        </div>
+        <div class="customers__item">
+          <img class="customers__logo" src="./image/logos/google.png" alt="Google logo">
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Inbox -->
+
+    <section class="inbox">
+      <figure class="inbox__figure">
+        <img src="./image/inbox.png" alt="post image">
+        <figcaption class="inbox__figure-caption">
+          Connect with customers and grow faster
+        </figcaption>
+      </figure>
+      <div class="inbox__text-section">
+        <span class="inbox__subtitle">Team Inbox</span>
+
+        <h3 class="inbox__title">Manage conversations</h3>
+        <p class="inbox__text">One place to manage and respond to all
+          conversations with leads and users. Receive messages from leads.
+        </p>
+        <div class="inbox__feedback">
+          <div class="inbox__feedback-content">
+            “Great widgets. Great selection. Great design
+            and <b>easy to implement.</b>
+            Definitely a huge time saver for a web developer!”
+          </div>
+          <div class="inbox__feedback-sign">
+            <div class="inbox__feedback-foto-frame">
+              <img class="inbox__feedback-foto" src="./image/oval.png" alt="foto">
+            </div>
+
+            <div class="inbox__feedback-person">
+              <span class="inbox__feedback-sign-name">Viella Malkovich</span>
+              <span class="inbox__feedback-sign-role">
+                Creative Director at Johnson
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Communications -->
+    <section class="communications">
+      <div class="communications__add-block">
+        <div class="communications__top-text">
+          <span class="communications__subtitle">
+            Communicate Better
+          </span>
+          <h2 class="communications__title">
+            Built for busy small teams
+          </h2>
+          <p class="communications__text">
+            Three products that can be used independently
+            or combined together for your company’s needs.
+          </p>
+          <button class="communications__button button__primary">
+            Get Started
+          </button>
+        </div>
+
+        <figure class="communications__figure">
+          <img class="communications__figure-image" src="./image/hand-with-phone.png" alt="hand with phone">
+          <figcaption class="communications__figure-caption">
+            A better way to acquire new users
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="communications__underline"></div>
+      <div class="communications__benefits-block">
+        <div class="communications__additional-info">
+          <b>Subscriptions.</b> Foundation works with
+          the tools and services you already use every
+          day.
+          <a href="#" class="communications__additional-info-link">
+            Learn more about subscriptions
+          </a>
+        </div>
+        <div class="communications__additional-info">
+          <b>Felxible Hours.</b>Felxible Hours. Get started with our simple
+          snippet of JavaScript or easy to install
+          SDKs for iOS and Android.
+          <a href="#" class="communications__additional-info-link">
+            Get more info about hours
+          </a>
+        </div>
+        <div class="communications__additional-info">
+          <b>Fast Communication.</b> We offer measures
+          like 2FA and SSO to ensure the safety of your
+          data.
+          <a href="#" class="communications__additional-info-link">
+            Communication guidelines
+          </a>
+        </div>
+      </div>
+
+    </section>
+    <!-- Audience -->
+
+    <section class="audience">
+      <h5 class="audience__subtitle">
+        Engage Visitors
+      </h5>
+      <h2 class="audience__title">
+        Understand your audience
+      </h2>
+      <span class="audience__text">
+        Early stage company? Eligible
+        applicants get all of our products for just $49 a month.
+      </span>
+      <div class="audience__button-block">
+        <button class="audience__button-primary button__primary">
+          Get Started
+        </button>
+        <button class="audience__button-secondary button__secondary">
+          Learn More
+        </button>
+      </div>
+      <div class="audience__gallery">
+        <figure class="audience__figure">
+          <img class="audience__figure-image" src="./image/audience/first.png" alt="robot">
+          <figcaption class="audience__figure-caption">Developers</figcaption>
+        </figure>
+        <figure class="audience__figure audience__figure--selected">
+          <img class="audience__figure-image" src="./image/audience/second.png" alt="tv">
+          <figcaption class="audience__figure-caption">Entertainment</figcaption>
+        </figure>
+        <figure class="audience__figure">
+          <img class="audience__figure-image" src="./image/audience/third.png" alt="letter">
+          <figcaption class="audience__figure-caption">Athletes</figcaption>
+        </figure>
+        <figure class="audience__figure">
+          <img class="audience__figure-image" src="./image/audience/fours.png" alt="creative">
+          <figcaption class="audience__figure-caption">Creators</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="footer__top-nav">
+        <div class="footer__top">
+          <a class="logo-bottom" href="#">
+            <div class="logo-bottom__image"></div>
+            <div class="logo-bottom__text">
+              <div class="logo-bottom__name">Foundation</div>
+              <div class="logo-bottom__slogan">Startup landing template</div>
             </div>
           </a>
-          <div class="header__menu">
-            <div class="header-nav">
-              <i class="fa-solid fa-bars header-nav__icon"></i>
-              <ul class="header-nav__list">
-                <li class="header-nav__list-item"><a href="#">Home</a></li>
-                <li class="header-nav__list-item">
-                  <a href="#stories">Stories</a>
-                </li>
-                <li class="header-nav__list-item">
-                  <a href="#library">Library</a>
-                </li>
-                <img class="header-nav__check-image" src="image/Arrow.png"></img>
-              </ul>
-            </div>    
-            <button class="header__button button__primary">Get Started</button>
+          <div class="footer__store-buttons">
+            <a href="https://www.apple.com/ua/app-store/" class="footer__download-apple">
+              <img src="./image/5847e95fcef1014c0b5e4822.png" alt="App store button">
+            </a>
+            <a href="https://play.google.com/store/apps" class="footer__download-google">
+              <img src="./image/5847e986cef1014c0b5e4825.png" alt="Google play button">
+            </a>
           </div>
-          
-        </header>
-        <!-- Main -->
-        
-          <!-- Face -->
-            <section class="face">
-              <img src="./image/ouch.png" alt="man at work" class="face__image" />
-              <h1 class="face__title">Build stunning websites & apps.</h1>
-              <article class="face__text">
-                Create live segments and target the right people for messages based
-                on their behaviors.
-              </article>
-              <button class="button__primary face__button-primary">
-                Get Started
-              </button>
-              <button class="button__secondary face__button-secondary">
-                Learn More
-              </button>
-            </section>
 
-            <!-- About -->
+        </div>
 
-           <section class="about">
-             <article class="about__article">
-               <h4 class="about__title">What is it about</h4>
-               <p class="about__text">
-                   Building a website for a startup that looks 
-                   amazing is not a rocket science anymore.
-               </p>
-              </article>
-              <article class="about__article">
-                <h4 class="about__title">Who is it for?</h4>
-                <p class="about__text">                  
-                  Startups, small companies and teams, entrepreneurs
-                  and web developers.
-                </p>
-              </article>
-            </section>
+        <div class="footer__line-horizontal-top"></div>
+        <ul class="footer__nav">
+          <h2 class="footer__nav-name">Product</h2>
+          <li class="footer__nav-item"><a href="" class="footer__nav-link">Acquire Users</a></li>
+          <li class="footer__nav-item"><a href="" class="footer__nav-link">Content Marketing</a></li>
+          <li class="footer__nav-item"><a href="" class="footer__nav-link">Website Templates</a></li>
+          <li class="footer__nav-item"><a href="" class="footer__nav-link">Customer Management</a></li>
+          <li class="footer__nav-item"><a href="" class="footer__nav-link">Virtual Inbox</a></li>
+        </ul>
 
-             <!-- Customers -->
+        <ul class="footer__nav">
+          <h4 class="footer__nav-name">Company</h4>
+          <li class="footer__nav-item"><a href="" class="footer__nav-link">About Foundation</a></li>
+          <li class="footer__nav-item"><a href="" class="footer__nav-link">Brand Guidelines</a></li>
+          <li class="footer__nav-item"><a href="" class="footer__nav-link">Press Kit</a></li>
+          <li class="footer__nav-item"><a href="" class="footer__nav-link">Support</a></li>
+        </ul>
+      </div>
+      <div class="footer__line-horizontal-bottom"></div>
+      <div class="footer__bottom">
+        <div class="footer__terms-box">
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+          <a href="#">Licence</a>
+        </div>
+        <div class="footer__social-box">
+          <i class="fa-brands fa-twitter footer__social-item"></i>
+          <i class="fa-brands fa-headlinebook-square footer__social-item"></i>
+          <i class="fa-brands fa-linkedin-in footer__social-item"></i>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
 
-            <section class="customers"> 
-              <div class="customers__row">
-                 <div class="customers__item">
-                    <img class="customers__logo" src="./image/logos/nut.png" alt="New York Times logo">
-                 </div>
-                 <div class="customers__item">
-                    <img class="customers__logo" src="./image/logos/forbes.png" alt="Forbes logo">
-                 </div>
-                 <div class="customers__item">
-                   <img class="customers__logo" src="./image/logos/apple.png" alt="Apple logo">
-                 </div>
-              </div>     
-              <div class="customers__row">
-                <div class="customers__item">
-                  <img class="customers__logo"src="./image/logos/mashable.png" alt="Mashable logo">
-                </div>
-                <div class="customers__item">
-                    <img class="customers__logo"src="./image/logos/wsj.png" alt="WSJ logo">
-                </div>
-                <div class="customers__item">
-                  <img class="customers__logo"src="./image/logos/google.png" alt="Google logo">
-                </div>
-              </div>
-              
-            </section>
-
-            <!-- Inbox -->
-
-            <section class="inbox">
-              <figure class="inbox__figure">
-                <img src="./image/inbox.png" alt="post image">
-                <figcaption class="inbox__figure-caption">
-                  Connect with customers and grow faster
-                </figcaption>
-              </figure>
-              <div class="inbox__text-section">
-                 <span class="inbox__subtitle">Team Inbox</span>
-             
-              <h3 class="inbox__title">Manage conversations</h3>
-              <p class="inbox__text">One place to manage and respond to all 
-                conversations with leads and users. Receive messages from leads.
-              </p>
-              <div class="inbox__feedback">
-                <div class="inbox__feedback-content">
-                  “Great widgets. Great selection. Great design 
-                  and <b>easy to implement.</b>
-                  Definitely a huge time saver for a web developer!”
-                </div>
-                <div class="inbox__feedback-sign">
-                  <div class="inbox__feedback-foto-frame">
-                    <img class="inbox__feedback-foto" src="./image/oval.png" alt="foto">
-                  </div>
-                  
-                  <div class="inbox__feedback-person">
-                    <span class="inbox__feedback-sign-name">Viella Malkovich</span>
-                    <span class="inbox__feedback-sign-role">
-                      Creative Director at Johnson
-                    </span>
-                  </div>
-                  
-                </div>
-              </div>
-              </div>
-              
-            </section>
-
-            <!-- Communications -->
-            <section class="communications">
-              <span class="communications__subtitle">
-                Communicate Better
-              </span>
-              <h2 class="communications__title">
-                Built for busy small teams
-              </h2>
-              <p class="communications__text">
-                Three products that can be used independently
-                or combined together for your company’s needs.
-              </p>
-              <button class="communications__button button__primary">
-                 Get Started
-              </button>
-               <figure class="communications__figure">
-                <img 
-                  class="communications__figure-image"  
-                  src="./image/hand-with-phone.png" 
-                  alt="hand with phone"
-                >
-                <figcaption class="communications__figure-caption">
-                  A better way to acquire new users
-                </figcaption>
-               </figure>
-               <div class="communications__underline"></div>
-               <div class="communications__additional-info">
-                <b>Subscriptions.</b> Foundation works with 
-                the tools and services you already use every 
-                day.
-                 <a href="#" class="communications__additional-info-link">
-                 Learn more about subscriptions
-                 </a>
-               </div>
-               <div class="communications__additional-info">
-                <b>Felxible Hours.</b>Felxible Hours. Get started with our simple
-                 snippet of JavaScript or easy to install 
-                 SDKs for iOS and Android.
-                 <a href="#" class="communications__additional-info-link">
-                  Get more  info about hours
-                 </a>
-               </div>
-               <div class="communications__additional-info">
-                <b>Fast Communication.</b> We offer measures 
-                like 2FA and SSO to ensure the safety of your
-                 data.
-                 <a href="#" class="communications__additional-info-link">
-                 Communication guidelines
-                 </a>
-               </div>
-            </section>
-            <!-- Audience -->
-
-            <section class="audience">
-              <h5 class="audience__subtitle">
-                Engage Visitors
-              </h5>
-              <h2 class="audience__title">
-               Understand your audience 
-              </h2>
-              <span class="audience__text">
-                Early stage company? Eligible 
-                applicants get all of our products for just $49 a month.
-              </span>
-              <div class="audience__button-block">
-                <button class="audience__button-primary button__primary">
-                Get Started
-              </button>
-               <button class="audience__button-secondary button__secondary">
-                Learn More
-              </button>
-              </div>
-              <div class="audience__gallery">
-                 <figure class="audience__figure">
-                <img class="audience__figure-image" src="./image/audience/first.png" alt="robot">
-                <figcaption class="audience__figure-caption">Developers</figcaption>
-              </figure>
-              <figure class="audience__figure audience__figure--selected">
-                <img class="audience__figure-image" src="./image/audience/second.png" alt="tv">
-                <figcaption class="audience__figure-caption">Entertainment</figcaption>
-              </figure>
-              <figure class="audience__figure">
-                <img class="audience__figure-image" src="./image/audience/third.png" alt="letter">
-                <figcaption class="audience__figure-caption">Athletes</figcaption>
-              </figure>
-              <figure class="audience__figure">
-                <img class="audience__figure-image" src="./image/audience/fours.png" alt="creative">
-                <figcaption class="audience__figure-caption">Creators</figcaption>
-              </figure>
-              </div>    
-            </section>
-
-          <!-- Footer -->
-
-          <footer class="footer">
-            <div class="footer__top-nav">
-              <div class="footer__top">
-                <a class="logo-bottom" href="#">
-                  <div class="logo-bottom__image"></div>
-                  <div class="logo-bottom__text">
-                    <div class="logo-bottom__name">Foundation</div>
-                    <div class="logo-bottom__slogan">Startup landing template</div>
-                  </div>
-                </a>
-                <div class="footer__store-buttons">
-                  <a href="https://www.apple.com/ua/app-store/" class="footer__download-apple">
-                    <img src="./image/5847e95fcef1014c0b5e4822.png" alt="App store button">
-                  </a>
-                  <a href="https://play.google.com/store/apps" class="footer__download-google">
-                    <img src="./image/5847e986cef1014c0b5e4825.png" alt="Google play button">
-                  </a>
-                </div>
-            
-              </div>
-            
-              <div class="footer__line-horizontal-top"></div>
-              <ul class="footer__nav">
-                <h2 class="footer__nav-name">Product</h2>
-                <li class="footer__nav-item"><a href="" class="footer__nav-link">Acquire Users</a></li>
-                <li class="footer__nav-item"><a href="" class="footer__nav-link">Content Marketing</a></li>
-                <li class="footer__nav-item"><a href="" class="footer__nav-link">Website Templates</a></li>
-                <li class="footer__nav-item"><a href="" class="footer__nav-link">Customer Management</a></li>
-                <li class="footer__nav-item"><a href="" class="footer__nav-link">Virtual Inbox</a></li>      
-              </ul>
-            
-              <ul class="footer__nav">
-                <h4 class="footer__nav-name">Company</h4>
-                <li class="footer__nav-item"><a href="" class="footer__nav-link">About Foundation</a></li>
-                <li class="footer__nav-item"><a href="" class="footer__nav-link">Brand Guidelines</a></li>
-                <li class="footer__nav-item"><a href="" class="footer__nav-link">Press Kit</a></li>
-                <li class="footer__nav-item"><a href="" class="footer__nav-link">Support</a></li>        
-              </ul>
-            </div>
-            <div class="footer__line-horizontal-bottom"></div>
-            <div class="footer__bottom">              
-              <div class="footer__terms-box">
-                <a href="#">Terms</a>
-                <a href="#">Privacy</a>
-                <a href="#">Licence</a>
-              </div>
-              <div class="footer__social-box">
-                <i class="fa-brands fa-twitter footer__social-item"></i>
-                <i class="fa-brands fa-facebook-square footer__social-item"></i>
-                <i class="fa-brands fa-linkedin-in footer__social-item"></i>
-              </div>
-            </div>           
-          </footer>       
-    </div>   
-  </body>
 </html>
