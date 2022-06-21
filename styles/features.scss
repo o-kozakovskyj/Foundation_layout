@@ -1,7 +1,7 @@
 .features {
   padding: 0 0 40px 0;
   border-bottom: 1px solid #E3E3E3;
-
+  position: relative;
 
   @include onDesktop {
     padding: 0 0 110px 128px;
@@ -116,8 +116,10 @@
       line-height: 26px;
     }
   }
+
   &__advantage {
     display: none;
+
     @include onDesktop {
       display: flex;
       margin-top: 20px;
@@ -125,8 +127,10 @@
       border-bottom: 1px solid rgba(43, 41, 45, 0.15)
     }
   }
+
   &__advantage-name {
     display: none;
+
     @include onDesktop {
       display: inline-block;
       font-weight: 700;
@@ -136,10 +140,26 @@
     }
 
   }
+
   &__main-image {
     display: none;
+
     @include onDesktop {
       display: flex;
     }
+  }
+
+  &__side-image {
+    height: 167px;
+    display: none;
+
+    @include onDesktop {
+      display: block;
+     
+      position: absolute;
+      top: 256px;
+      left: 0px;
+    }
+
   }
 }
