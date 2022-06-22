@@ -1,0 +1,105 @@
+.order {
+  padding: 50px 15px;
+  background-color: rgba(244, 245, 247, 1);
+
+  @include onDesktop {
+   padding: 73px 0 72px 0;
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+  }
+  &__details {
+    @include onDesktop {
+      max-width: 555px;
+    }
+  }
+  &__image {
+
+    max-width: 200px;
+    @include onDesktop {
+      max-width: 269px;
+      margin-right: 121px;
+    }
+  }
+  &__title {
+    margin: 0;
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.25px;
+    @include onDesktop {
+      text-align: start;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    margin-top: 18px;
+    @include onDesktop {
+      margin-top: 12px;
+    }
+  }
+  &__form {
+    @include onDesktop {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 26px;
+    }
+  }
+
+  &__email {
+  border-radius:2px;
+    margin-top: 40px;
+    padding: 0;
+    margin: 0;
+    height: 48px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 13px;
+    background-color: #fff;
+    text-align: center;
+    &::placeholder {
+      color:$mainTextColor;
+      @include onDesktop {
+        text-align: start;
+      }
+    }
+    @include onDesktop {
+      margin: 0;
+      width: 385px;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    margin-top: 12px;
+    @include onDesktop {
+      margin: 0;
+      width: 160px;
+      margin-left: 10px;
+      flex-shrink: 0;
+    }
+  }
+  &__terms-box {
+    margin-top: 10px;
+  }
+  &__terms {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(43, 41, 45, 0.6);
+  }
+  &__terms-link {
+    color:rgba(48, 64, 196, 1);
+    &:hover {
+     color: $mainTextColor;
+    }
+  }
+}
