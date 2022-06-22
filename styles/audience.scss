@@ -1,6 +1,7 @@
 .audience {
   display: flex;
   flex-direction: column;
+ 
   padding: 50px 15px;
   background-color: rgba(0, 161, 198, 0.07);
   @include onDesktop {
@@ -8,12 +9,14 @@
     padding: 108px 131px 110px 130px;
   }
   &__subtitle {
+    text-align: center;
     margin: 0;
     font-weight: 700;
     font-size: 22px;
     line-height: 34px;
   }
   &__title {
+    text-align: center;
     margin: 0;
     margin-top: 17px;
     font-weight: 700;
@@ -31,6 +34,7 @@
     }
   }
   &__text {
+    text-align: center;
     margin-top: 18px;
     font-size: 24px;
     line-height: 34px;
@@ -100,7 +104,7 @@
       margin: 0;
     }
   }
-  &__figure--selected {
+  &__figure:hover {
     background-color: rgba(49, 65, 197, 1);
     & figcaption {
       color: #fff;
