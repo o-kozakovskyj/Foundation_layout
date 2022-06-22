@@ -1,0 +1,53 @@
+.hiring {
+  padding: 50px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include onDesktop {
+    padding: 105px 0 110px 0;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.357143px;
+
+    @include onDesktop {
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 56px;
+      text-align: center;
+      letter-spacing: -0.5px;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    margin-top: 18px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+
+    @include onDesktop {
+      width: 555px;
+      text-align: center;
+      margin-top: 20px;
+    }
+  }
+
+  &__button {
+    margin: 30px 0 24px 0;
+    width: 100%;
+
+    @include onDesktop {
+      margin-top: 28px;
+      width: 247px;
+    }
+  }
+
+}
