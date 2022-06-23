@@ -1,76 +1,57 @@
 .header-nav {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  position: relative;
-  z-index: 4;
-  align-items: center;
-  font-size: 18px;
-  line-height: 25px;
-    
-  &:hover ul{
-    display: block;
-    position: absolute;
-    top:50px;
-    left: -6px;
-   
-   @include onDesktop {
-      display: flex;
-      position: static;
-      
-    }
-  }
+  margin-left: auto;
+  margin-top: 7px;
+ 
+
   &__list {
     margin: 0;
     padding: 0;
     list-style: none;
     display: none;
+
     @include onDesktop {
       display: flex;
-     
     }
   }
-  &__list-item  a{
-    text-decoration: none;
-    &:last-child {
-      margin-right: 12px;
-    }
-    
-    &:hover {
-     font-weight: bold;
-    }
-  }
+
   &__list-item {
-    margin-bottom: 16px;
+    text-decoration: none;
+    line-height: 25px;
+    font-size: 18px;
+
     @include onDesktop {
-      margin-left: 50px;
+      margin-right: 50px;
+    }
+  }
+ 
+
+  &__list-item--selected {
+    font-weight: 700;
+  }
+
+  &__icon {
+    &:hover {
+      opacity: 1;
     }
 
-  }
-  &__icon {
-   &:hover {
-     opacity: 1;
-   }
     padding: 16px 20px;
     font-size: 20px;
     opacity: 0.5;
     border-left: 1px solid rgba(0, 0, 0, 0.15);
-    
+
     @include onDesktop {
       display: none;
     }
   }
- 
-  &__check-image {
+
+  &__arrow {
     display: none;
-    
-    
     @include onDesktop {
-      display: block;
-      transform: translate(0, 12px);
-      height: 5px;
-      width: 8px;
-      margin-right: 56px;
+     background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
+     display: inline-block;
+     height: 5px;
+     width: 8px;
+     margin-left: 11px;
     }
-  } 
+  }
 }

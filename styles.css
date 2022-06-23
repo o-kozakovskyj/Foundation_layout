@@ -1,6 +1,5 @@
 .logo-top {
   display: flex;
-  text-decoration: none;
   align-items: center;
 }
 .logo-top__image {
@@ -9,18 +8,18 @@
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon.png);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 @media screen and (min-width: 1400px) {
   .logo-top__image {
     width: 60px;
     height: 60px;
+    margin-right: 15px;
   }
 }
 .logo-top__text {
-  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .logo-top__name {
   font-weight: 700;
@@ -31,6 +30,7 @@
   display: none;
   opacity: 0.6;
   font-size: 20px;
+  line-height: 25px;
 }
 @media screen and (min-width: 1400px) {
   .logo-top__slogan {
@@ -45,19 +45,17 @@
 }
 
 .header {
-  z-index: 5;
-  align-items: center;
+  width: 1140px;
+  height: 62px;
   display: flex;
-  justify-content: space-between;
-  padding: 0 0 0 15px;
+  margin: auto;
 }
 .header__menu {
-  display: flex;
+  display: none;
 }
 @media screen and (min-width: 1400px) {
-  .header {
-    background-color: #F3C6BD;
-    padding-top: 40px;
+  .header__menu {
+    display: flex;
   }
 }
 .header__button {
@@ -66,34 +64,13 @@
 @media screen and (min-width: 1400px) {
   .header__button {
     display: block;
-    margin-right: 130px;
+    width: 160px;
   }
-}
-.header__button {
-  width: 160px;
 }
 
 .header-nav {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  position: relative;
-  z-index: 4;
-  align-items: center;
-  font-size: 18px;
-  line-height: 25px;
-}
-.header-nav:hover ul {
-  display: block;
-  position: absolute;
-  top: 50px;
-  left: -6px;
-}
-@media screen and (min-width: 1400px) {
-  .header-nav:hover ul {
-    display: flex;
-    position: static;
-  }
+  margin-left: auto;
+  margin-top: 7px;
 }
 .header-nav__list {
   margin: 0;
@@ -106,22 +83,18 @@
     display: flex;
   }
 }
-.header-nav__list-item a {
-  text-decoration: none;
-}
-.header-nav__list-item a:last-child {
-  margin-right: 12px;
-}
-.header-nav__list-item a:hover {
-  font-weight: bold;
-}
 .header-nav__list-item {
-  margin-bottom: 16px;
+  text-decoration: none;
+  line-height: 25px;
+  font-size: 18px;
 }
 @media screen and (min-width: 1400px) {
   .header-nav__list-item {
-    margin-left: 50px;
+    margin-right: 50px;
   }
+}
+.header-nav__list-item--selected {
+  font-weight: 700;
 }
 .header-nav__icon {
   padding: 16px 20px;
@@ -137,39 +110,51 @@
     display: none;
   }
 }
-.header-nav__check-image {
+.header-nav__arrow {
   display: none;
 }
 @media screen and (min-width: 1400px) {
-  .header-nav__check-image {
-    display: block;
-    transform: translate(0, 12px);
+  .header-nav__arrow {
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
+    display: inline-block;
     height: 5px;
     width: 8px;
-    margin-right: 56px;
+    margin-left: 11px;
   }
 }
 
-.page {
-  display: flex;
-  margin: auto;
-}
 @media screen and (min-width: 1400px) {
-  .page {
-    min-width: 1400px;
+  .page__container {
+    width: 1400px;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
 }
-.page__container {
-  width: 100%;
+@media screen and (min-width: 1400px) {
+  .page__top-section {
+    padding-top: 39px;
+    background-color: #F3C6BD;
+  }
 }
 
 .headline {
-  background-color: #f3c6bd;
-  position: relative;
+  margin: auto;
+  display: flex;
 }
 @media screen and (min-width: 1400px) {
   .headline {
-    padding: 76px 0 130px 130px;
+    margin-top: 84px;
+    padding: 0;
+    padding-bottom: 77px;
+    width: 1140px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .headline__context {
+    position: absolute;
+    z-index: 1;
   }
 }
 .headline__title {
@@ -177,7 +162,7 @@
   font-size: 50px;
   line-height: 50px;
   letter-spacing: -0.3125px;
-  margin: 0 16px 24px 16px;
+  margin: 0;
 }
 @media screen and (min-width: 1400px) {
   .headline__title {
@@ -186,14 +171,13 @@
     font-size: 80px;
     line-height: 78px;
     letter-spacing: -0.5px;
-    margin-bottom: 34px;
-    transform: translate(0);
+    z-index: 1;
   }
 }
 .headline__text {
   font-size: 24px;
   line-height: 34px;
-  margin: 0 16px 30px 16px;
+  margin: 0;
 }
 @media screen and (min-width: 1400px) {
   .headline__text {
@@ -201,8 +185,9 @@
     height: 102px;
     font-size: 24px;
     line-height: 34px;
-    margin-bottom: 58px;
-    transform: translate(0);
+    margin: 0;
+    margin-top: 34px;
+    z-index: 1;
   }
 }
 .headline__button-primary {
@@ -223,21 +208,17 @@
   .headline__button-secondary {
     width: 158px;
     margin: 0;
+    margin-top: 58px;
   }
-}
-.headline__image {
-  display: block;
-  max-width: 100%;
-  position: absolute;
-  bottom: 36px;
 }
 @media screen and (min-width: 1400px) {
   .headline__image {
     height: 448px;
     width: 796px;
-    position: absolute;
-    right: 25px;
-    bottom: 77px;
+    position: relative;
+    right: -105px;
+    top: 0;
+    margin-left: auto;
   }
 }
 

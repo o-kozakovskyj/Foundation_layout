@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport"
+    content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
   <title>Foundation</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
     integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
@@ -23,52 +24,49 @@
 
   <div class="page__container">
 
-    <!--   header   -->
-
-    <header class="header">
-      <a class="logo-top" href="#">
-        <div class="logo-top__image"></div>
-        <div class="logo-top__text">
-          <div class="logo-top__name">Foundation</div>
-          <div class="logo-top__slogan">Startup landing template</div>
+    <!--   header  +   headline -->
+    <div class="page__top-section">
+      <header class="header">
+        <div class="logo-top">
+          <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon.png" alt="Logo"
+            class="logo-top__image">
+          <div class="logo-top__text">
+            <div class="logo-top__name">Foundation</div>
+            <div class="logo-top__slogan">Startup landing template</div>
+          </div>
         </div>
-      </a>
-      <div class="header__menu">
+
         <div class="header-nav">
-          <i class="fa-solid fa-bars header-nav__icon"></i>
-          <ul class="header-nav__list">
-            <li class="header-nav__list-item"><a href="#">Home</a></li>
-            <li class="header-nav__list-item">
-              <a href="#stories">Stories</a>
-            </li>
-            <li class="header-nav__list-item">
-              <a href="#library">Library</a>
-            </li>
-            <img class="header-nav__check-image" src="image/Arrow.png"></img>
-          </ul>
+          <i class="header-nav__icon"
+            href="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png"></i>
+          <nav class="header-nav__list">
+            <a href="#" class="header-nav__list-item header-nav__list-item--selected">Home</a>
+            <a href="#" class="header-nav__list-item">Stories</a>
+            <a href="#" class="header-nav__list-item">Library<i class="header-nav__arrow"></i></a>
+          </nav>
         </div>
         <button class="header__button button__primary">Get Started</button>
-      </div>
 
-    </header>
-    <!-- Main -->
 
-    <!-- headline -->
-    <section class="headline">
-      <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/ouch.png"
-        alt="man at work" class="headline__image" />
-      <h1 class="headline__title">Build stunning websites & apps.</h1>
-      <article class="headline__text">
-        Create live segments and target the right people for messages based
-        on their behaviors.
-      </article>
-      <button class="button__primary headline__button-primary">
-        Get Started
-      </button>
-      <button class="button__secondary headline__button-secondary">
-        Learn More
-      </button>
-    </section>
+      </header>
+
+      <section class="headline">
+        <div class="headline__context">
+          <h1 class="headline__title">Build stunning websites & apps.</h1>
+          <article class="headline__text">
+            Create live segments and target the right people for messages based
+            on their behaviors.
+          </article>
+          <div>
+            <button class="button__primary headline__button-primary"> Get Started</button>
+            <button class="button__secondary headline__button-secondary">Learn More</button>
+          </div>
+        </div>
+        <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/ouch.png"
+          alt="man at work" class="headline__image" />
+      </section>
+    </div>
+
 
     <!-- About -->
 
@@ -441,7 +439,7 @@
           <input type="email" placeholder="Enter your email" class="order__email">
           <button class="order__button button__primary">Get Started</button>
         </form>
-       
+
         <div class="order__terms-box">
           <p class="order__terms">
             Free 14-day trial · Easy setup · Cancel any time. Check out

@@ -1,13 +1,18 @@
 .page {
-  display: flex;
- 
-  margin: auto;
-
-  @include onDesktop {
-   min-width: 1400px;
+  
+  &__container {
+    @include onDesktop {
+      width: 1400px;
+      margin: auto;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
   }
-
-  &__container {   
-    width: 100%;
+  &__top-section {
+    @include onDesktop {
+      padding-top: 39px;
+      background-color: #F3C6BD;
+    }
   }
 }

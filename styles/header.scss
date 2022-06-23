@@ -1,29 +1,23 @@
 .header {
-  z-index: 5;
-  align-items: center;
+  width: 1140px;
+  height: 62px;
   display: flex;
-  justify-content: space-between;
-  
-  padding: 0 0 0 15px;
-   &__menu {
-     display: flex;
-   }
-    
-  @include onDesktop {
-    background-color: #F3C6BD;
-    padding-top: 40px;
+  margin: auto;
+
+  &__menu {
+    display: none;
+    @include onDesktop {
+      display: flex;
+    }
+
   }
-  
+
   &__button {
     display: none;
-     @include onDesktop {
+
+    @include onDesktop {
       display: block;
-      margin-right: 130px;
+      width: 160px;
     }
-  }
- 
- 
-  &__button {
-    width: 160px;
   }
 }
