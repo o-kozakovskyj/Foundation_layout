@@ -154,11 +154,13 @@
     line-height: 22px;
     opacity: 0.6;
     margin-left: 16px;
-
     &:hover {
       opacity: 1;
     }
   }
+    &__terms-box :first-child {
+      margin-left: 0;
+    }
 
   &__social-item {
     opacity: 0.6;
