@@ -1,9 +1,10 @@
 .features {
   display: none !important;
+
   @include onDesktop {
     display: flex !important;
   }
- 
+
   position: relative;
   padding: 0 0 110px 128px;
   display: flex;
@@ -51,7 +52,7 @@
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
-    color: #3142C6;
+    color: $mainBlueColor;
     margin-left: 15px;
   }
 
@@ -60,7 +61,7 @@
     margin-top: 8px;
     padding-bottom: 18px;
     display: block;
-    border-bottom: 1px solid rgba(49, 66, 198, 1);
+    border-bottom: 1px solid $mainBlueColor;
     font-weight: 400;
     font-size: 18px;
     line-height: 26px;

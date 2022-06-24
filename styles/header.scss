@@ -11,7 +11,7 @@
     height: 62px;
     display: flex;
     margin: auto;
-    background-color: #F3C6BD;
+    background-color: $pinkBackground;
   }
 
   &__menu {
@@ -46,7 +46,6 @@
       }
     }
   }
- 
 }
 
 .page .header__button {

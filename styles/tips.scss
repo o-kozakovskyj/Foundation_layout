@@ -5,13 +5,11 @@
 
   padding: 8px 15px 10px 15px;
   
-
   &__section {
     margin-top: 40px;
     border-bottom: 1px solid #E3E3E3;
     &:last-child {
       border-bottom: none;
-
     }
   }
 
@@ -44,10 +42,7 @@
     justify-content: center;
     align-items: center;
   }
-  &__figure-image {
-   
-  }
-
+ 
   &__figure-caption {
     margin: 19px 0 40px 0;
     font-size: 14px;

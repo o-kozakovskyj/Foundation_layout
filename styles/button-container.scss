@@ -20,7 +20,7 @@
     margin-top: 20px;
 
     &:hover {
-      background-color: rgba(49, 65, 197, 1);
+      background-color: $mainBlueColor;
     }
 
     &:hover h4,
@@ -29,7 +29,7 @@
     }
 
     &:hover div {
-      background-color: rgba(49, 65, 197, 1);
+      background-color: $mainBlueColor;
     }
 
     &:hover .button-container__arrow--hover {

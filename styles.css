@@ -148,6 +148,9 @@
   }
 }
 
+.page {
+  box-sizing: border-box;
+}
 .page__container {
   width: 100%;
   overflow-x: hidden;
@@ -805,7 +808,7 @@
   }
 }
 .audience__figure:hover {
-  background-color: rgb(49, 65, 197);
+  background-color: #3142C6;
 }
 .audience__figure:hover figcaption {
   color: #fff;
@@ -942,7 +945,7 @@
 }
 .communication__additional-info-link {
   display: block;
-  color: rgb(48, 64, 196);
+  color: #3142C6;
   font-weight: 700;
 }
 @media screen and (min-width: 1400px) {
@@ -1022,7 +1025,7 @@
   margin-top: 8px;
   padding-bottom: 18px;
   display: block;
-  border-bottom: 1px solid rgb(49, 66, 198);
+  border-bottom: 1px solid #3142C6;
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
@@ -1252,14 +1255,14 @@
     margin-top: 20px;
   }
   .button-container:hover {
-    background-color: rgb(49, 65, 197);
+    background-color: #3142C6;
   }
   .button-container:hover h4,
 .button-container span {
     color: #fff;
   }
   .button-container:hover div {
-    background-color: rgb(49, 65, 197);
+    background-color: #3142C6;
   }
   .button-container:hover .button-container__arrow--hover {
     display: inline;

@@ -1,124 +1,144 @@
 .footer {
   padding: 40px 15px 22px 15px;
+
   @include onDesktop {
     display: flex;
     flex-direction: column;
     margin: auto;
+
     &__top {
       display: flex;
       flex-direction: column;
       margin-right: 126px;
     }
+
     &__top-nav {
       display: flex;
-      
     }
   }
+
   &__company-aims {
     display: none;
+
     @include onDesktop {
       margin: 0;
-      display:flex;
+      display: flex;
       width: 360px;
       margin-bottom: 25px;
     }
   }
+
   &__store-buttons {
     display: flex;
     justify-content: space-around;
   }
+
   &__download-apple {
     display: block;
     width: 135px;
     height: 40px;
+
     &:hover {
       transform: scale(1.2);
     }
   }
+
   &__download-google {
     display: block;
     width: 116px;
     height: 40px;
+
     &:hover {
       transform: scale(1.2);
     }
   }
+
   &__line-horizontal-top {
     border-bottom: 1px solid #E3E3E3;
     margin: 40px -15px 30px -15px;
+
     @include onDesktop {
       display: none;
     }
   }
+
   &__line-horizontal-bottom {
     display: none;
+
     @include onDesktop {
       display: block;
       border-top: 1px solid $mainTextColor;
       opacity: 0.1;
       margin: 59px -130px 13px -130px;
-      
+
     }
   }
+
   &__nav {
     padding: 0;
     margin: 0;
     list-style: none;
-    
+
     margin-bottom: 30px;
+
     @include onDesktop {
       margin-right: 126px;
     }
-   
+
   }
+
   &__nav-name {
     margin: 0 0 6px;
     font-weight: 700;
     font-size: 22px;
     line-height: 28px;
   }
-  
+
   &__nav-link {
-    padding-top:12px;
+    padding-top: 12px;
     text-decoration: none;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
     opacity: 0.6;
-   
+
     &:hover {
       opacity: 1;
     }
   }
 
   &__bottom {
-   
-   @include onDesktop {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-between;
-   }
-   
+
+    @include onDesktop {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
   }
+
   &__terms-box {
     margin-bottom: 30px;
   }
- 
-  &__terms-box a{
+
+  &__terms-box a {
     text-decoration: none;
     font-size: 14px;
     line-height: 22px;
     opacity: 0.6;
     margin-left: 16px;
+
     &:hover {
       opacity: 1;
     }
   }
+
   &__social-item {
     opacity: 0.6;
     font-size: 22px;
     margin-left: 20px;
     transition: 0.3s;
+
     &:hover {
       transform: scale(1.2);
       opacity: 1;

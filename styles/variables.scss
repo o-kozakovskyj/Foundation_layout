@@ -1,4 +1,6 @@
 $mainTextColor: #2b292d;
+$mainBlueColor: #3142C6;
+$pinkBackground: #F3C6BD;
 @mixin onDesktop  {
   @media screen and (min-width: 1400px) {
     @content;
