@@ -1,7 +1,10 @@
 .header-nav {
   margin-left: auto;
   margin-top: 7px;
- 
+
+  @include onDesktop {
+    display: none;
+  }
 
   &__list {
     margin: 0;
@@ -23,35 +26,21 @@
       margin-right: 50px;
     }
   }
- 
+
 
   &__list-item--selected {
     font-weight: 700;
   }
 
-  &__icon {
-    &:hover {
-      opacity: 1;
-    }
-
-    padding: 16px 20px;
-    font-size: 20px;
-    opacity: 0.5;
-    border-left: 1px solid rgba(0, 0, 0, 0.15);
-
-    @include onDesktop {
-      display: none;
-    }
-  }
-
   &__arrow {
     display: none;
+
     @include onDesktop {
-     background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
-     display: inline-block;
-     height: 5px;
-     width: 8px;
-     margin-left: 11px;
+      background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
+      display: inline-block;
+      height: 5px;
+      width: 8px;
+      margin-left: 11px;
     }
   }
 }

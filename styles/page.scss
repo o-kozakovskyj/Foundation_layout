@@ -1,6 +1,9 @@
 .page {
-  
+
   &__container {
+    width: 100%;
+    overflow-x: hidden;
+
     @include onDesktop {
       width: 1400px;
       margin: auto;
@@ -9,10 +12,13 @@
       flex-direction: column;
     }
   }
+
   &__top-section {
+    background-color: #F3C6BD;
+
     @include onDesktop {
       padding-top: 39px;
-      background-color: #F3C6BD;
+
     }
   }
 }

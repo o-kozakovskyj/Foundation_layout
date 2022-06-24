@@ -1,13 +1,48 @@
 .header {
-  width: 1140px;
-  height: 62px;
+  height: 64px;
+  width: 100%;
+  background-color: #fff;
   display: flex;
-  margin: auto;
+  align-items: center;
+  padding-left: 15px;
+
+  @include onDesktop {
+    width: 1140px;
+    height: 62px;
+    display: flex;
+    margin: auto;
+  }
 
   &__menu {
     display: none;
+
     @include onDesktop {
       display: flex;
+    }
+  }
+
+  &__menu-button {
+    width: 58px;
+    border: none;
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+    height: 100%;
+
+    margin-left: auto;
+
+    @include onDesktop {
+      display: none;
+    }
+
+    &__button-icon {
+      display: inline-block;
+      width: 18px;
+      height: 13px;
+      background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png);
+
+      @include onDesktop {
+        display: none;
+      }
+
     }
 
   }
