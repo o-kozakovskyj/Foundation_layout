@@ -51,12 +51,10 @@
 }
 @media screen and (min-width: 1400px) {
   .header {
-    padding: 0;
     width: 1140px;
     height: 62px;
     display: flex;
     margin: auto;
-    align-items: flex-start;
     background-color: #F3C6BD;
   }
 }
@@ -131,7 +129,7 @@
 }
 @media screen and (min-width: 1400px) {
   .header-nav__list-item {
-    margin-right: 50px;
+    margin-right: 56px;
   }
 }
 .header-nav__list-item--selected {
@@ -182,7 +180,7 @@
 }
 @media screen and (min-width: 1400px) {
   .headline {
-    margin-top: 84px;
+    margin-top: 76px;
     padding: 0;
     padding-bottom: 77px;
     width: 1140px;
