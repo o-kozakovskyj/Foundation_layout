@@ -129,7 +129,7 @@
 }
 @media screen and (min-width: 1400px) {
   .header-nav__list-item {
-    margin-right: 56px;
+    margin-right: 68px;
   }
 }
 .header-nav__list-item--selected {
@@ -475,7 +475,7 @@
 @media screen and (min-width: 1400px) {
   .footer__bottom {
     height: 50px;
-    padding: 0 132px 0 130px;
+    padding: 0;
     align-items: center;
     display: flex;
     flex-direction: row;

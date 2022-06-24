@@ -20,8 +20,8 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      @include
-      onDesktop {
+
+      @include onDesktop {
         height: 338px;
       }
     }
@@ -107,7 +107,7 @@
   }
 
   &__nav-link {
-   
+
     text-decoration: none;
     font-weight: 400;
     font-size: 18px;
@@ -123,8 +123,8 @@
 
     @include onDesktop {
       height: 50px;
-      padding: 0 132px 0 130px;
-align-items: center;
+      padding: 0;
+      align-items: center;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -137,11 +137,12 @@ align-items: center;
     border-top: 1px solid $mainTextColor;
     opacity: 0.1;
     width: 100%;
-   
+
   }
 
   &__terms-box {
     margin-bottom: 30px;
+
     @include onDesktop {
       margin: 0;
     }
