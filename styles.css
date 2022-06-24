@@ -382,6 +382,10 @@
 }
 .footer__company-aims {
   display: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(43, 41, 45, 0.6);
 }
 @media screen and (min-width: 1400px) {
   .footer__company-aims {
@@ -395,10 +399,16 @@
   display: flex;
   justify-content: space-around;
 }
+@media screen and (min-width: 1400px) {
+  .footer__store-buttons {
+    justify-content: flex-start;
+  }
+}
 .footer__download-apple {
   display: block;
   width: 135px;
   height: 40px;
+  margin-right: 10px;
 }
 .footer__download-apple:hover {
   transform: scale(1.2);
@@ -439,7 +449,12 @@
 }
 @media screen and (min-width: 1400px) {
   .footer__nav {
-    margin-right: 126px;
+    margin: 0;
+    margin-right: 26px;
+    width: 265px;
+  }
+  .footer__nav:last-child {
+    margin-right: 0;
   }
 }
 .footer__nav-name {

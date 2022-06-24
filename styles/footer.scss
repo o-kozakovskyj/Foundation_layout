@@ -19,6 +19,10 @@
 
   &__company-aims {
     display: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(43, 41, 45, 0.6);
 
     @include onDesktop {
       margin: 0;
@@ -31,12 +35,16 @@
   &__store-buttons {
     display: flex;
     justify-content: space-around;
+    @include onDesktop {
+      justify-content: flex-start;
+    }
   }
 
   &__download-apple {
     display: block;
     width: 135px;
     height: 40px;
+    margin-right: 10px;
 
     &:hover {
       transform: scale(1.2);
@@ -78,11 +86,15 @@
     padding: 0;
     margin: 0;
     list-style: none;
-
     margin-bottom: 30px;
 
     @include onDesktop {
-      margin-right: 126px;
+      margin: 0;
+      margin-right: 26px;
+      width: 265px;
+      &:last-child {
+        margin-right: 0;
+      }
     }
 
   }
