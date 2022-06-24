@@ -129,7 +129,7 @@
 }
 @media screen and (min-width: 1400px) {
   .header-nav__list-item {
-    margin-right: 68px;
+    margin-right: 58px;
   }
 }
 .header-nav__list-item--selected {
