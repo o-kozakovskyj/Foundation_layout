@@ -378,6 +378,7 @@
   }
   .footer__top-nav {
     display: flex;
+    align-items: center;
   }
 }
 .footer__company-aims {
