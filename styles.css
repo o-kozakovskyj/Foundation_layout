@@ -51,10 +51,12 @@
 }
 @media screen and (min-width: 1400px) {
   .header {
+    padding: 0;
     width: 1140px;
     height: 62px;
     display: flex;
     margin: auto;
+    align-items: flex-start;
     background-color: #F3C6BD;
   }
 }
