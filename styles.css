@@ -370,6 +370,7 @@
 @media screen and (min-width: 1400px) {
   .footer {
     width: 1140px;
+    padding: 0;
     display: flex;
     flex-direction: column;
   }
