@@ -1,9 +1,11 @@
 .header-nav {
-  margin-left: auto;
-  margin-top: 7px;
+
+  display: none;
 
   @include onDesktop {
-    display: none;
+    display: block;
+    margin-left: auto;
+    margin-top: 7px;
   }
 
   &__list {

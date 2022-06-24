@@ -11,6 +11,7 @@
     height: 62px;
     display: flex;
     margin: auto;
+    background-color: #F3C6BD;
   }
 
   &__menu {
@@ -18,6 +19,7 @@
 
     @include onDesktop {
       display: flex;
+      margin-left: auto;
     }
   }
 
@@ -42,17 +44,16 @@
       @include onDesktop {
         display: none;
       }
-
     }
-
   }
+ 
+}
 
-  &__button {
-    display: none;
+.page .header__button {
+  display: none;
 
-    @include onDesktop {
-      display: block;
-      width: 160px;
-    }
+  @include onDesktop {
+    display: flex;
+    width: 160px;
   }
 }

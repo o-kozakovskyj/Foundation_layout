@@ -56,7 +56,7 @@
   &__email {
   border-radius:2px;
     margin-top: 40px;
-    padding: 0;
+   padding-left: 15px;
     margin: 0;
     height: 48px;
     width: 100%;
@@ -91,6 +91,7 @@
     margin-top: 10px;
   }
   &__terms {
+    margin: 0;
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
