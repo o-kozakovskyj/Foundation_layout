@@ -278,42 +278,30 @@
   }
 }
 
-.button__primary {
+.button {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0;
-  background-color: #3040c4;
   height: 48px;
   border-radius: 2px;
   box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.0509803922);
   border: none;
-  color: #fff;
   font-weight: 700;
   font-size: 18px;
   line-height: 13px;
+  padding: 0;
 }
-.button__primary:hover {
+.button:hover {
   opacity: 0.5;
   cursor: pointer;
+}
+.button__primary {
+  color: #fff;
+  background-color: #3040c4;
 }
 .button__secondary {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
+  background-color: #fff;
   color: #3040c4;
-  height: 48px;
-  border-radius: 2px;
-  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.0509803922);
-  border: none;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 13px;
-}
-.button__secondary:hover {
-  opacity: 0.5;
-  cursor: pointer;
 }
 
 .logo-bottom {
@@ -533,8 +521,8 @@
   flex-direction: column;
   font-size: 22px;
   line-height: 32px;
-  padding: 46px 15px;
   background: #f4f5f7;
+  padding: 46px 15px;
 }
 .about :first-child {
   margin-bottom: 20px;
@@ -553,9 +541,9 @@
 }
 @media screen and (min-width: 1400px) {
   .about {
-    padding: 77px 130px 76px 130px;
     flex-direction: row;
     justify-content: space-between;
+    padding: 77px 130px 76px 130px;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -568,14 +556,14 @@
   display: flex;
 }
 .customers__item {
-  height: 94px;
-  width: 107px;
-  border-bottom: 1px solid #e3e3e3;
-  border-right: 1px solid #e3e3e3;
   display: flex;
   flex: 1;
   justify-content: center;
   align-items: center;
+  height: 94px;
+  width: 107px;
+  border-bottom: 1px solid #e3e3e3;
+  border-right: 1px solid #e3e3e3;
 }
 .customers :last-child {
   border-right: none;
@@ -587,8 +575,8 @@
 @media screen and (min-width: 1400px) {
   .customers {
     display: flex;
-    padding: 30px 130px 106px 130px;
     align-items: center;
+    padding: 30px 130px 106px 130px;
   }
   .customers__item {
     border: none;
@@ -728,8 +716,8 @@
 .audience {
   display: flex;
   flex-direction: column;
-  padding: 50px 15px;
   background-color: rgba(0, 161, 198, 0.07);
+  padding: 50px 15px;
 }
 @media screen and (min-width: 1400px) {
   .audience {
@@ -739,36 +727,35 @@
 }
 .audience__subtitle {
   text-align: center;
-  margin: 0;
   font-weight: 700;
   font-size: 22px;
   line-height: 34px;
+  margin: 0;
 }
 .audience__title {
   text-align: center;
-  margin: 0;
-  margin-top: 17px;
   font-weight: 700;
   font-size: 40px;
   line-height: 40px;
   letter-spacing: -0.357143px;
+  margin: 17px 0 0 0;
 }
 @media screen and (min-width: 1400px) {
   .audience__title {
+    width: 555px;
+    text-align: center;
     font-weight: 700;
     font-size: 56px;
     line-height: 56px;
-    text-align: center;
     letter-spacing: -0.5px;
-    width: 555px;
     margin-top: 24px;
   }
 }
 .audience__text {
   text-align: center;
-  margin-top: 18px;
   font-size: 24px;
   line-height: 34px;
+  margin-top: 18px;
 }
 @media screen and (min-width: 1400px) {
   .audience__text {
@@ -784,20 +771,19 @@
   }
 }
 .audience__button-primary {
-  margin-top: 30px;
   width: 100%;
+  margin-top: 30px;
 }
 @media screen and (min-width: 1400px) {
   .audience__button-primary {
     width: 160px;
-    margin-top: 34px;
-    margin-right: 10px;
+    margin: 34px 16px 0 0;
   }
 }
 .audience__button-secondary {
-  margin-top: 12px;
   width: 100%;
   background-color: #fff;
+  margin-top: 12px;
 }
 @media screen and (min-width: 1400px) {
   .audience__button-secondary {
@@ -814,35 +800,12 @@
   }
 }
 .audience__figure {
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0;
   background-color: #fff;
-}
-@media screen and (min-width: 1400px) {
-  .audience__figure {
-    width: 262px;
-  }
-}
-.audience__gallery figure {
-  margin-bottom: 15px;
-}
-@media screen and (min-width: 1400px) {
-  .audience__gallery figure {
-    margin-bottom: 0;
-    margin-left: 30px;
-  }
-}
-.audience figure:first-of-type {
-  margin-top: 40px;
-}
-@media screen and (min-width: 1400px) {
-  .audience figure:first-of-type {
-    margin: 0;
-  }
+  margin: 0 0 15px 0;
 }
 .audience__figure:hover {
   background-color: #3142C6;
@@ -850,12 +813,18 @@
 .audience__figure:hover figcaption {
   color: #fff;
 }
-.audience__gallery :nth-child(4) img {
-  margin-right: 15px;
+@media screen and (min-width: 1400px) {
+  .audience__figure {
+    width: 262px;
+    margin: 0 30px 0 0;
+  }
+}
+.audience figure:first-of-type {
+  margin-top: 40px;
 }
 @media screen and (min-width: 1400px) {
-  .audience__gallery :nth-child(4) img {
-    margin-right: 0;
+  .audience figure:first-of-type {
+    margin-top: 0;
   }
 }
 .audience__figure-caption {
@@ -876,8 +845,8 @@
 }
 
 .communication {
-  padding: 50px 15px;
   background: #f2f2f2;
+  padding: 50px 15px;
 }
 @media screen and (min-width: 1400px) {
   .communication {
@@ -898,12 +867,11 @@
   }
 }
 .communication__title {
-  margin: 0;
-  margin-top: 17px;
   font-weight: 700;
   font-size: 40px;
   line-height: 40px;
   letter-spacing: -0.357143px;
+  margin: 17px 0 0 0;
 }
 @media screen and (min-width: 1400px) {
   .communication__title {
@@ -911,11 +879,10 @@
   }
 }
 .communication__text {
-  margin: 0;
-  margin-top: 18px;
   font-weight: 400;
   font-size: 24px;
   line-height: 34px;
+  margin: 18px 0 0 0;
 }
 @media screen and (min-width: 1400px) {
   .communication__text {
@@ -923,11 +890,11 @@
   }
 }
 .communication__button {
-  margin-top: 30px;
   width: 160px;
   font-weight: 700;
   font-size: 18px;
   line-height: 13px;
+  margin-top: 30px;
 }
 @media screen and (min-width: 1400px) {
   .communication__button {
@@ -939,8 +906,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  margin-top: 40px;
+  margin: 40px 0 0 0;
 }
 @media screen and (min-width: 1400px) {
   .communication__figure {
@@ -951,16 +917,16 @@
   max-width: 100%;
 }
 .communication__figure-caption {
-  margin-top: 17px;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: rgba(43, 41, 45, 0.6);
+  margin-top: 17px;
 }
 .communication__underline {
   width: 150px;
-  margin-top: 40px;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
 }
 @media screen and (min-width: 1400px) {
   .communication__underline {
@@ -968,9 +934,9 @@
   }
 }
 .communication__additional-info {
-  margin-top: 33px;
   font-size: 18px;
   line-height: 26px;
+  margin-top: 33px;
 }
 @media screen and (min-width: 1400px) {
   .communication__additional-info {
@@ -1028,12 +994,12 @@
   line-height: 34px;
 }
 .features__title {
-  margin: 0;
-  margin-top: 24px;
   font-weight: 700;
   font-size: 56px;
   line-height: 56px;
   letter-spacing: -0.5px;
+  margin: 0;
+  margin-top: 24px;
 }
 .features__text {
   display: block;
@@ -1272,16 +1238,16 @@
 
 .button-container {
   display: flex;
-  background-color: #fff;
-  border: 1px solid rgba(43, 41, 45, 0.2);
-  border-radius: 8px;
-  padding: 0 0 0 20px;
-  width: 100%;
-  cursor: pointer;
-  margin-top: 15px;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  border: 1px solid rgba(43, 41, 45, 0.2);
+  border-radius: 8px;
+  background-color: #fff;
+  cursor: pointer;
   transition: 0.1s;
+  padding: 0 0 0 20px;
+  margin-top: 15px;
 }
 .button-container:hover {
   background-color: rgb(213, 212, 213);
@@ -1324,10 +1290,10 @@
 }
 .button-container__title {
   text-align: start;
-  margin: 0;
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;
+  margin: 0;
 }
 @media screen and (min-width: 1400px) {
   .button-container__title {
@@ -1335,12 +1301,12 @@
   }
 }
 .button-container__location {
+  text-align: start;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   opacity: 0.6;
   margin-top: 16px;
-  text-align: start;
 }
 @media screen and (min-width: 1400px) {
   .button-container__location {
@@ -1349,7 +1315,6 @@
   }
 }
 .button-container__fill {
-  background: #D5D4D5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1357,6 +1322,7 @@
   width: 50px;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
+  background: #D5D4D5;
 }
 @media screen and (min-width: 1400px) {
   .button-container__fill {

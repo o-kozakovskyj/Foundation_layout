@@ -1,15 +1,17 @@
 .button-container {
   display: flex;
-  background-color: #fff;
-  border: 1px solid rgba(43, 41, 45, 0.2);
-  border-radius: 8px;
-  padding: 0 0 0 20px;
-  width: 100%;
-  cursor: pointer;
-  margin-top: 15px;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+
+  border: 1px solid rgba(43, 41, 45, 0.2);
+  border-radius: 8px;
+  background-color: #fff;
+
+  cursor: pointer;
   transition: 0.1s;
+  padding: 0 0 0 20px;
+  margin-top: 15px;
 
   &:hover {
     background-color: rgba(213, 212, 213, 1);
@@ -58,10 +60,10 @@
 
   &__title {
     text-align: start;
-    margin: 0;
     font-weight: 700;
     font-size: 22px;
     line-height: 28px;
+    margin: 0;
 
     @include onDesktop {
       text-align: center;
@@ -69,12 +71,13 @@
   }
 
   &__location {
+    text-align: start;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
     opacity: 0.6;
     margin-top: 16px;
-    text-align: start;
+   
 
     @include onDesktop {
       text-align: center;
@@ -83,20 +86,20 @@
   }
 
   &__fill {
-    background: #D5D4D5;
+   
     display: flex;
     align-items: center;
     justify-content: center;
     height: 140px;
     width: 50px;
-
+     
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
+    background: #D5D4D5;
 
     @include onDesktop {
       height: 81px;
       background-color: #fff;
-
     }
   }
 

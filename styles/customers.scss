@@ -1,33 +1,38 @@
 .customers {
-  
+
   &__row {
     display: flex;
   }
+
   &__item {
-    height: 94px;
-    width: 107px;
-    border-bottom: 1px solid #e3e3e3;
-    border-right: 1px solid #e3e3e3;
     display: flex;
     flex: 1;
     justify-content: center;
     align-items: center;
+    height: 94px;
+    width: 107px;
+    border-bottom: 1px solid #e3e3e3;
+    border-right: 1px solid #e3e3e3;
   }
+
   & :last-child {
     border-right: none;
   }
+
   &__logo {
     filter: brightness(0);
     max-width: 80%;
   }
-  
+
   @include onDesktop {
     display: flex;
-    padding: 30px 130px 106px 130px; 
     align-items: center;
+    padding: 30px 130px 106px 130px;
+
     &__item {
       border: none;
     }
+
     &__row {
       flex: 1;
       justify-content: space-around;

@@ -1,74 +1,83 @@
 .audience {
   display: flex;
   flex-direction: column;
- 
-  padding: 50px 15px;
   background-color: rgba(0, 161, 198, 0.07);
+  padding: 50px 15px;
+
   @include onDesktop {
     align-items: center;
     padding: 108px 131px 110px 130px;
   }
+
   &__subtitle {
     text-align: center;
-    margin: 0;
     font-weight: 700;
     font-size: 22px;
     line-height: 34px;
+    margin: 0;
   }
+
   &__title {
     text-align: center;
-    margin: 0;
-    margin-top: 17px;
     font-weight: 700;
     font-size: 40px;
     line-height: 40px;
     letter-spacing: -0.357143px;
+    margin: 17px 0 0 0;
+
     @include onDesktop {
+      width: 555px;
+      text-align: center;
       font-weight: 700;
       font-size: 56px;
       line-height: 56px;
-      text-align: center;
       letter-spacing: -0.5px;
-      width: 555px;
       margin-top: 24px;
     }
   }
+
   &__text {
     text-align: center;
-    margin-top: 18px;
     font-size: 24px;
     line-height: 34px;
+    margin-top: 18px;
+
     @include onDesktop {
       width: 555px;
       margin-top: 30px;
     }
   }
+
   &__button-block {
     @include onDesktop {
       display: flex;
       justify-content: center;
       align-items: center;
     }
-    
+
   }
+
   &__button-primary {
-    margin-top: 30px;
     width: 100%;
+    margin-top: 30px;
+
     @include onDesktop {
       width: 160px;
-       margin-top: 34px;
-       margin-right: 10px;
+      margin: 34px 16px 0 0;
     }
   }
+
   &__button-secondary {
-    margin-top: 12px;
     width: 100%;
     background-color: #fff;
+    margin-top: 12px;
+
     @include onDesktop {
       width: 160px;
       margin-top: 34px;
     }
   }
+
   &__gallery {
     @include onDesktop {
       display: flex;
@@ -76,59 +85,51 @@
       align-items: center;
       margin-top: 111px;
     }
-    
   }
+
   &__figure {
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0;
-   background-color: #fff;
-   @include onDesktop {
-      width: 262px;
+    background-color: #fff;
+    margin: 0 0 15px 0;
+
+    &:hover {
+      background-color: $mainBlueColor;
+
+      & figcaption {
+        color: #fff;
+      }
     }
-   
-  }
-  &__gallery figure {
-    margin-bottom: 15px;
+
     @include onDesktop {
-      margin-bottom: 0;
-      margin-left: 30px;
+      width: 262px;
+      margin: 0 30px 0 0;
     }
   }
+
   & figure:first-of-type {
     margin-top: 40px;
+
     @include onDesktop {
-      margin: 0;
+      margin-top: 0;
     }
   }
-  &__figure:hover {
-    background-color: $mainBlueColor;
-    & figcaption {
-      color: #fff;
-    }
-  }
- 
-   &__gallery :nth-child(4) img {
-   margin-right: 15px;
-   @include onDesktop {
-     margin-right: 0;
-   }
-  }
+
   &__figure-caption {
     font-weight: 700;
     font-size: 22px;
     line-height: 28px;
     margin-top: 22px;
     margin-bottom: 33px;
-   
+
     @include onDesktop {
       width: 212px;
       text-align: center;
     }
   }
+
   &__figure-image {
     margin-top: 22px;
   }
