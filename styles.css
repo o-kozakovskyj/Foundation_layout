@@ -818,6 +818,9 @@
     width: 262px;
     margin: 0 30px 0 0;
   }
+  .audience__figure:last-child {
+    margin: 0;
+  }
 }
 .audience figure:first-of-type {
   margin-top: 40px;

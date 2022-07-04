@@ -106,6 +106,9 @@
     @include onDesktop {
       width: 262px;
       margin: 0 30px 0 0;
+      &:last-child {
+        margin: 0;
+      }
     }
   }
 
