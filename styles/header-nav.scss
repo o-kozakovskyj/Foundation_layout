@@ -9,11 +9,11 @@
   }
 
   &__list {
+    display: none;
     margin: 0;
     padding: 0;
     list-style: none;
-    display: none;
-
+    
     @include onDesktop {
       display: flex;
     }
@@ -37,10 +37,10 @@
     display: none;
 
     @include onDesktop {
-      background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
       display: inline-block;
       height: 5px;
       width: 8px;
+      background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
       margin-left: 11px;
     }
   }

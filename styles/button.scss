@@ -3,28 +3,26 @@
   justify-content: center;
   align-items: center;
   height: 48px;
- 
- 
   border-radius: 2px;
   box-shadow: 0px 4px 6px 0px #0000000D;
   border: none;
-
   font-weight: 700;
   font-size: 18px;
   line-height: 13px;
   padding: 0;
 
   &:hover {
-      opacity: 0.5;
-      cursor: pointer;
-    }
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
   &__primary {
-    color: #fff;
+    color: $white;
     background-color: #3040c4;
   }
 
   &__secondary {
-    background-color: #fff;
+    background-color: $white;
     color: #3040c4;
   }
 }

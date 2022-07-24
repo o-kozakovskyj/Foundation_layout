@@ -8,15 +8,16 @@
   @include onDesktop {
     flex-direction: row;
   }
+
   &__image {
     width: 60px;
     height: 60px;
-   
     background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-dark.png);
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 8px;
     margin-bottom: 20px;
+
     @include onDesktop {
       margin-right: 15px;
     }
@@ -26,10 +27,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
     @include onDesktop {
       align-items: flex-start;
     }
   }
+
   &__name {
     font-weight: 700;
     font-size: 20px;

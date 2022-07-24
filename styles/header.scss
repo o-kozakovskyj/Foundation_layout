@@ -1,18 +1,18 @@
 .header {
-  height: 64px;
-  width: 100%;
-  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 64px;
+  width: 100%;
+  background-color: $white;
   padding-left: 15px;
 
   @include onDesktop {
+    display: flex;
     width: 1140px;
     height: 62px;
-    display: flex;
+    background-color: $pinkBackground;
     margin: auto;
-    background-color: #F3C6BD;
   }
 
   &__menu {
@@ -36,7 +36,6 @@
       display: none;
     }
   }
-
 }
 
 .page .header__button {

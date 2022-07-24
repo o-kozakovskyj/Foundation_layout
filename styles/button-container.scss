@@ -6,7 +6,7 @@
 
   border: 1px solid rgba(43, 41, 45, 0.2);
   border-radius: 8px;
-  background-color: #fff;
+  background-color: $white;
 
   cursor: pointer;
   transition: 0.1s;
@@ -27,7 +27,7 @@
 
     &:hover h4,
     span {
-      color: #fff
+      color: $white;
     }
 
     &:hover div {
@@ -78,7 +78,6 @@
     opacity: 0.6;
     margin-top: 16px;
    
-
     @include onDesktop {
       text-align: center;
       margin: 0 0 0 100px;

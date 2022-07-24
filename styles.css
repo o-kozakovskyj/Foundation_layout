@@ -42,21 +42,21 @@
 }
 
 .header {
-  height: 64px;
-  width: 100%;
-  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 64px;
+  width: 100%;
+  background-color: #fff;
   padding-left: 15px;
 }
 @media screen and (min-width: 1400px) {
   .header {
+    display: flex;
     width: 1140px;
     height: 62px;
-    display: flex;
-    margin: auto;
     background-color: #F3C6BD;
+    margin: auto;
   }
 }
 .header__menu {
@@ -103,10 +103,10 @@
   }
 }
 .header-nav__list {
+  display: none;
   margin: 0;
   padding: 0;
   list-style: none;
-  display: none;
 }
 @media screen and (min-width: 1400px) {
   .header-nav__list {
@@ -131,10 +131,10 @@
 }
 @media screen and (min-width: 1400px) {
   .header-nav__arrow {
-    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
     display: inline-block;
     height: 5px;
     width: 8px;
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
     margin-left: 11px;
   }
 }
@@ -165,17 +165,17 @@
 }
 
 .headline {
+  position: relative;
   margin: auto;
   padding: 0 15px 249px 15px;
-  position: relative;
 }
 @media screen and (min-width: 1400px) {
   .headline {
+    width: 1140px;
+    display: flex;
     margin-top: 76px;
     padding: 0;
     padding-bottom: 77px;
-    width: 1140px;
-    display: flex;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -348,9 +348,9 @@
 }
 @media screen and (min-width: 1400px) {
   .footer {
-    padding: 0;
     display: flex;
     flex-direction: column;
+    padding: 0;
   }
   .footer__top {
     display: flex;
@@ -378,9 +378,9 @@
 }
 @media screen and (min-width: 1400px) {
   .footer__company-aims {
-    margin: 0;
     display: flex;
     width: 360px;
+    margin: 0;
     margin-bottom: 25px;
   }
 }
@@ -408,7 +408,7 @@
   height: 40px;
 }
 .footer__download-google:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .footer__line-horizontal-top {
   border-bottom: 1px solid #E3E3E3;
@@ -420,26 +420,26 @@
   }
 }
 .footer__nav {
+  list-style: none;
   padding: 0;
   margin: 0;
-  list-style: none;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 1400px) {
   .footer__nav {
+    width: 265px;
     margin: 0;
     margin-right: 26px;
-    width: 265px;
   }
   .footer__nav:last-child {
     margin-right: 0;
   }
 }
 .footer__nav-name {
-  margin: 0 0 18px;
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;
+  margin: 0 0 18px;
 }
 .footer__nav-link {
   text-decoration: none;
@@ -453,12 +453,12 @@
 }
 @media screen and (min-width: 1400px) {
   .footer__bottom {
-    height: 50px;
-    padding: 0 132px 0 130px;
-    align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 132px 0 130px;
   }
 }
 .footer__line {
@@ -502,7 +502,7 @@
   transition: 0.3s;
 }
 .footer__social-item:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   opacity: 1;
   cursor: pointer;
 }
@@ -601,10 +601,10 @@
   }
 }
 .inbox__figure {
-  margin: 0;
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin: 0;
 }
 .inbox__figure :first-child {
   max-width: 100%;
@@ -633,11 +633,11 @@
 }
 @media screen and (min-width: 1400px) {
   .inbox__title {
+    max-width: 462px;
     font-size: 56px;
     line-height: 56px;
     letter-spacing: -0.5px;
     margin-top: 24px;
-    max-width: 462px;
   }
 }
 .inbox__text {
@@ -649,8 +649,8 @@
 }
 @media screen and (min-width: 1400px) {
   .inbox__text {
-    margin-top: 30px;
     max-width: 461px;
+    margin-top: 30px;
   }
 }
 .inbox__feedback {
@@ -665,10 +665,10 @@
 }
 @media screen and (min-width: 1400px) {
   .inbox__feedback {
-    margin-top: 44px;
     width: 519px;
     min-height: 213px;
     align-items: flex-start;
+    margin-top: 44px;
   }
 }
 .inbox__feedback-content {
@@ -696,9 +696,9 @@
   opacity: 0.6;
 }
 .inbox__feedback-foto-frame {
-  margin-right: 11px;
   min-width: 40px;
   min-height: 40px;
+  margin-right: 11px;
 }
 .inbox__feedback-foto {
   max-width: 100%;
@@ -966,11 +966,11 @@
 }
 
 .features {
+  display: flex;
+  justify-content: space-between;
   display: none !important;
   position: relative;
   padding: 0 0 110px 128px;
-  display: flex;
-  justify-content: space-between;
 }
 @media screen and (min-width: 1400px) {
   .features {
@@ -981,11 +981,11 @@
   width: 459px;
 }
 .features__subtitle {
-  margin: 0;
   color: rgb(0, 155, 77);
   font-weight: 700;
   font-size: 22px;
   line-height: 34px;
+  margin: 0;
 }
 .features__title {
   font-weight: 700;
@@ -1004,28 +1004,28 @@
   line-height: 34px;
 }
 .features__advantage-header {
-  margin-top: 42px;
   display: flex;
   align-items: center;
+  margin-top: 42px;
 }
 .features__advantage-header-title {
   display: block;
-  margin: 0;
   font-weight: 700;
   font-size: 22px;
   line-height: 26px;
   color: #3142C6;
+  margin: 0;
   margin-left: 15px;
 }
 .features__advantage-text {
-  margin: 0;
-  margin-top: 8px;
-  padding-bottom: 18px;
   display: block;
   border-bottom: 1px solid #3142C6;
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
+  padding-bottom: 18px;
+  margin: 0;
+  margin-top: 8px;
 }
 .features__advantage {
   display: flex;
@@ -1060,7 +1060,7 @@
 }
 .tips__section {
   margin-top: 40px;
-  border-bottom: 1px solid #E3E3E3;
+  border-bottom: 1px solid #e3e3e3;
 }
 .tips__section:last-child {
   border-bottom: none;
@@ -1092,11 +1092,11 @@
   align-items: center;
 }
 .tips__figure-caption {
-  margin: 19px 0 40px 0;
+  text-align: center;
   font-size: 14px;
   line-height: 22px;
-  text-align: center;
   color: rgba(43, 41, 45, 0.6);
+  margin: 19px 0 40px 0;
 }
 
 .feedback {
@@ -1122,11 +1122,11 @@
   color: #3142C6;
 }
 .feedback__text {
-  margin: 0;
-  margin-top: 29px;
   font-weight: 400;
   font-size: 24px;
   line-height: 34px;
+  margin: 0;
+  margin-top: 29px;
 }
 @media screen and (min-width: 1400px) {
   .feedback__text {
@@ -1135,10 +1135,10 @@
 }
 .feedback__person {
   display: block;
-  margin-top: 32px;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
+  margin-top: 32px;
 }
 .feedback__person-role {
   opacity: 0.4;
@@ -1154,8 +1154,8 @@
   padding: 0;
 }
 .feedback__navigation-item {
-  margin-left: 40px;
   opacity: 0.5;
+  margin-left: 40px;
 }
 .feedback__navigation-item:hover {
   color: rgb(49, 66, 197);
@@ -1177,11 +1177,11 @@
 }
 
 .hiring {
-  padding: 50px 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 50px 15px;
 }
 @media screen and (min-width: 1400px) {
   .hiring {
@@ -1189,12 +1189,12 @@
   }
 }
 .hiring__title {
-  margin: 0;
   font-weight: 700;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
   letter-spacing: -0.357143px;
+  margin: 0;
 }
 @media screen and (min-width: 1400px) {
   .hiring__title {
@@ -1206,11 +1206,11 @@
   }
 }
 .hiring__text {
-  margin: 0;
-  margin-top: 18px;
   font-weight: 400;
   font-size: 24px;
   line-height: 34px;
+  margin: 0;
+  margin-top: 18px;
 }
 @media screen and (min-width: 1400px) {
   .hiring__text {
@@ -1220,8 +1220,8 @@
   }
 }
 .hiring__button {
-  margin: 30px 0 24px 0;
   width: 100%;
+  margin: 30px 0 24px 0;
 }
 @media screen and (min-width: 1400px) {
   .hiring__button {
@@ -1369,10 +1369,10 @@
   }
 }
 .order__text {
-  margin: 0;
   font-weight: 400;
   font-size: 22px;
   line-height: 32px;
+  margin: 0;
   margin-top: 18px;
 }
 @media screen and (min-width: 1400px) {
@@ -1389,17 +1389,17 @@
   }
 }
 .order__email {
-  border-radius: 2px;
-  margin-top: 40px;
-  padding-left: 15px;
-  margin: 0;
+  text-align: center;
   height: 48px;
   width: 100%;
+  border-radius: 2px;
   font-weight: 400;
   font-size: 18px;
   line-height: 13px;
   background-color: #fff;
-  text-align: center;
+  margin-top: 40px;
+  padding-left: 15px;
+  margin: 0;
 }
 .order__email::placeholder {
   color: #2b292d;
@@ -1421,10 +1421,10 @@
 }
 @media screen and (min-width: 1400px) {
   .order__button {
-    margin: 0;
     width: 160px;
     margin-left: 10px;
     flex-shrink: 0;
+    margin: 0;
   }
 }
 .order__terms-box {

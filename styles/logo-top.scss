@@ -1,5 +1,6 @@
 .logo-top {
- display: flex;
+  display: flex;
+
   &__image {
     width: 48px;
     height: 48px;
@@ -9,7 +10,6 @@
     @include onDesktop {
       width: 60px;
       height: 60px;
-
     }
   }
 
@@ -35,5 +35,4 @@
       line-height: 25px;
     }
   }
-
 }

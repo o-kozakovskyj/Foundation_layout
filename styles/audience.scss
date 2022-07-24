@@ -69,7 +69,7 @@
 
   &__button-secondary {
     width: 100%;
-    background-color: #fff;
+    background-color: $white;
     margin-top: 12px;
 
     @include onDesktop {
@@ -92,20 +92,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    background-color: $white;
     margin: 0 0 15px 0;
 
     &:hover {
       background-color: $mainBlueColor;
 
       & figcaption {
-        color: #fff;
+        color: $white;
       }
     }
 
     @include onDesktop {
       width: 262px;
       margin: 0 30px 0 0;
+
       &:last-child {
         margin: 0;
       }

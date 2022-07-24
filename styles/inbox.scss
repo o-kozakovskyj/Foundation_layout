@@ -1,16 +1,16 @@
 .inbox {
-  padding: 50px 15px; 
+  padding: 50px 15px;
   background-color: #fcf0e3;
 
-   @include onDesktop {
+  @include onDesktop {
     display: flex;
     justify-content: space-between;
     padding: 115px 99px 101px 193px;
-    
   }
 
   &__figure-caption {
     display: none;
+
     @include onDesktop {
       display: block;
       font-size: 14px;
@@ -18,32 +18,32 @@
       opacity: 0.6;
     }
   }
+
   &__figure {
-    margin: 0;
-   display: flex;
+    display: flex;
     align-items: center;
     flex-direction: column;
-    
+    margin: 0;
+
     & :first-child {
       max-width: 100%;
     }
+
     @include onDesktop {
       min-width: 425px;
       justify-content: center;
       align-items: center;
-      
     }
   }
-  
+
   &__subtitle {
     font-weight: 700;
     font-size: 22px;
     line-height: 34px;
     color: #f1592b;
     min-width: 290px;
-
   }
-  
+
   &__title {
     margin: 0;
     margin-top: 17px;
@@ -51,78 +51,84 @@
     font-size: 40px;
     line-height: 40px;
     letter-spacing: -0.357143px;
+
     @include onDesktop {
+      max-width: 462px;
       font-size: 56px;
       line-height: 56px;
       letter-spacing: -0.5px;
       margin-top: 24px;
-      max-width: 462px;
     }
   }
+
   &__text {
     margin: 0;
     margin-top: 18px;
     font-weight: 400;
     font-size: 24px;
     line-height: 34px;
+
     @include onDesktop {
-      margin-top: 30px;
       max-width: 461px;
+      margin-top: 30px;
     }
   }
+
   &__feedback {
     min-height: 321px;
-    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-top: 30px;
     padding: 30px 20px;
-    background-color: #fff;
-    border-bottom: 4px solid  #0185D0;
+    background-color: $white;
+    border-bottom: 4px solid #0185D0;
 
     @include onDesktop {
-      margin-top: 44px;
       width: 519px;
       min-height: 213px;
       align-items: flex-start;
+      margin-top: 44px;
     }
   }
+
   &__feedback-content {
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
   }
+
   &__feedback-sign {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
   }
+
   &__feedback-person {
     display: flex;
     flex-direction: column;
-   
+
   }
+
   &__feedback-sign-name {
-     font-weight: 700;
-     font-size: 16px;
-     line-height: 22px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
   }
-   &__feedback-sign-role {
-     font-size: 16px;
-     line-height: 22px;
-     opacity: 0.6;
+
+  &__feedback-sign-role {
+    font-size: 16px;
+    line-height: 22px;
+    opacity: 0.6;
   }
+
   &__feedback-foto-frame {
-    margin-right: 11px;
     min-width: 40px;
     min-height: 40px;
-    
+    margin-right: 11px;
   }
+
   &__feedback-foto {
     max-width: 100%;
   }
- 
 }
