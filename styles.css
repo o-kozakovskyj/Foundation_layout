@@ -47,6 +47,7 @@
   background-color: #fff;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding-left: 15px;
 }
 @media screen and (min-width: 1400px) {
@@ -69,24 +70,14 @@
 }
 .header__menu-button {
   width: 58px;
-  border: none;
   border-left: 1px solid rgba(0, 0, 0, 0.15);
   height: 100%;
-  margin-left: auto;
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 @media screen and (min-width: 1400px) {
   .header__menu-button {
-    display: none;
-  }
-}
-.header__menu-button__button-icon {
-  display: inline-block;
-  width: 18px;
-  height: 13px;
-  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png);
-}
-@media screen and (min-width: 1400px) {
-  .header__menu-button__button-icon {
     display: none;
   }
 }
