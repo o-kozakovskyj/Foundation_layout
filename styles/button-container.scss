@@ -25,9 +25,12 @@
       background-color: $mainBlueColor;
     }
 
-    &:hover h4,
-    span {
+    &:hover h4{
       color: $white;
+    }
+    &:hover span{
+      color: $white;
+      opacity: 1;
     }
 
     &:hover div {
@@ -53,7 +56,7 @@
 
     @include onDesktop {
       flex-direction: row;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
     }
   }
@@ -80,7 +83,7 @@
    
     @include onDesktop {
       text-align: center;
-      margin: 0 0 0 100px;
+      margin: 0 0 0 230px;
     }
   }
 

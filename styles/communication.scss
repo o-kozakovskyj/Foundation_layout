@@ -5,7 +5,7 @@
   @include onDesktop {
     display: flex;
     flex-direction: column;
-    padding: 110px 130px;
+    padding: 110px 0px 110px 126px;
   }
 
   &__subtitle {
@@ -96,7 +96,9 @@
     margin-top: 33px;
 
     @include onDesktop {
+      margin: 0;
       margin-right: 30px;
+      width: 360px;
 
       &:last-child {
         margin-right: 0;
@@ -128,6 +130,7 @@
     @include onDesktop {
       display: flex;
       flex-direction: column;
+      justify-content: flex-end;
       max-width: 462px;
     }
   }
