@@ -1,6 +1,6 @@
 # foundation
 ### [Site link](https://o-kozakovskyj.github.io/foundation/)
-Layout supports mobile (up-to-400) and desktop (1400) versions
+Layout supports mobile (320) and desktop (1400) versions
 ### The tech stack is:
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
 - [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)

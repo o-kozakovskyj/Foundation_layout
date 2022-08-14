@@ -141,6 +141,7 @@
 
 .page {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 .page__container {
   width: 100%;
@@ -198,6 +199,7 @@
     font-size: 80px;
     line-height: 78px;
     letter-spacing: -0.5px;
+    margin: 0;
     z-index: 1;
   }
 }
@@ -264,7 +266,7 @@
     width: 796px;
     position: relative;
     right: -105px;
-    top: 0;
+    bottom: -8px;
     margin-left: auto;
   }
 }
@@ -305,6 +307,7 @@
 @media screen and (min-width: 1400px) {
   .logo-bottom {
     flex-direction: row;
+    margin-bottom: 26px;
   }
 }
 .logo-bottom__image {
@@ -318,6 +321,7 @@
 }
 @media screen and (min-width: 1400px) {
   .logo-bottom__image {
+    margin: 0;
     margin-right: 15px;
   }
 }
@@ -349,7 +353,7 @@
   .footer {
     display: flex;
     flex-direction: column;
-    padding: 0 130px;
+    padding: 43px 130px 0;
   }
   .footer__top {
     display: flex;
@@ -364,9 +368,8 @@
 @media screen and (min-width: 1400px) and (min-width: 1400px) {
   .footer__top-nav {
     display: flex;
-    align-items: center;
-    height: 338px;
-    width: 1400px;
+    align-items: baseline;
+    height: 295px;
     margin: auto;
   }
 }
@@ -387,7 +390,7 @@
 }
 .footer__store-buttons {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 @media screen and (min-width: 1400px) {
   .footer__store-buttons {
@@ -470,11 +473,9 @@
 @media screen and (min-width: 1400px) {
   .footer__line {
     display: block;
-    margin: 0;
-    padding: auto;
     border-top: 1px solid #2b292d;
     opacity: 0.1;
-    width: 100%;
+    margin: 0 -130px;
   }
 }
 .footer__terms-box {
@@ -513,6 +514,9 @@
   font-size: 22px;
   margin-left: 20px;
   transition: 0.3s;
+}
+.footer__social-item:first-child {
+  margin-left: 0;
 }
 .footer__social-item:hover {
   transform: scale(1.1);
@@ -853,7 +857,7 @@
 }
 
 .communication {
-  background: #f2f2f2;
+  background: #fff;
   padding: 50px 15px;
 }
 @media screen and (min-width: 1400px) {
@@ -1389,6 +1393,7 @@
   }
 }
 .order__text {
+  height: 167px;
   font-weight: 400;
   font-size: 22px;
   line-height: 32px;
@@ -1398,6 +1403,7 @@
 @media screen and (min-width: 1400px) {
   .order__text {
     margin-top: 12px;
+    height: 64px;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -1411,6 +1417,7 @@
 .order__email {
   height: 48px;
   width: 100%;
+  border: none;
   border-radius: 2px;
   font-weight: 400;
   font-size: 18px;
@@ -1418,7 +1425,6 @@
   background-color: #fff;
   margin-top: 40px;
   padding-left: 15px;
-  margin: 0;
 }
 .order__email::placeholder {
   color: #2b292d;

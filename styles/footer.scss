@@ -6,7 +6,7 @@
   @include onDesktop {
     display: flex;
     flex-direction: column;
-    padding: 0 130px;
+    padding: 43px 130px 0 ;
 
     &__top {
       display: flex;
@@ -19,10 +19,9 @@
     &__top-nav {
       @include onDesktop {
         display: flex;
-
-        align-items: center;
-        height: 338px;
-        width: 1400px;
+        align-items:baseline;
+        height: 295px;
+        
         margin: auto;
       }
     }
@@ -45,7 +44,7 @@
 
   &__store-buttons {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 
     @include onDesktop {
       justify-content: flex-start;
@@ -136,11 +135,9 @@
 
     @include onDesktop {
       display: block;
-      margin: 0;
-      padding: auto;
       border-top: 1px solid $mainTextColor;
-      opacity: 0.1;
-      width: 100%;
+      opacity: 0.1; 
+      margin: 0 -130px;
     }
   }
 
@@ -183,7 +180,9 @@
     font-size: 22px;
     margin-left: 20px;
     transition: 0.3s;
-
+    &:first-child {
+      margin-left: 0;
+    }
     &:hover {
       transform: scale(1.1);
       opacity: 1;

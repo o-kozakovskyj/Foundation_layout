@@ -7,6 +7,7 @@
 
   @include onDesktop {
     flex-direction: row;
+    margin-bottom: 26px;
   }
 
   &__image {
@@ -19,6 +20,7 @@
     margin-bottom: 20px;
 
     @include onDesktop {
+      margin: 0;
       margin-right: 15px;
     }
   }

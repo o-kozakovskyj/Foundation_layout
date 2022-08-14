@@ -31,6 +31,7 @@
       font-size: 80px;
       line-height: 78px;
       letter-spacing: -0.5px;
+      margin: 0;
       z-index: 1;
     }
   }
@@ -93,11 +94,12 @@
     right: 0;
 
     @include onDesktop {
+
       height: 448px;
       width: 796px;
       position: relative;
       right: -105px;
-      top: 0;
+      bottom: -8px;
       margin-left: auto;
     }
   }
