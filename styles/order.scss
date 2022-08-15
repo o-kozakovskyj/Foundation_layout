@@ -64,7 +64,7 @@
   &__email {
     height: 48px;
     width: 100%;
-    border: none;
+    border: 1px solid rgba(43, 41, 45, 0.2);
     border-radius: 2px;
     font-weight: 400;
     font-size: 18px;
@@ -84,6 +84,7 @@
 
     @include onDesktop {
       margin: 0;
+      margin-right: 10px;
       width: 385px;
     }
   }
