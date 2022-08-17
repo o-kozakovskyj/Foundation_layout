@@ -1370,9 +1370,12 @@
 }
 .order__image {
   max-width: 200px;
+  display: block;
+  margin: 0 auto;
 }
 @media screen and (min-width: 1400px) {
   .order__image {
+    margin: 0;
     max-width: 269px;
     margin-right: 121px;
   }
